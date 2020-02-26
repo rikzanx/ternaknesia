@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $.ajax({
-        url: "http://127.0.0.1:8000/datajoin",
+        url: "http://127.0.0.1:8000/api/datajoin",
         method: 'get',
         success: function (result) {
-            var data = jQuery.parseJSON(result)
+            var data = result;
             var event_data = '';
             for (var i = 0; i < data.length; i++) {
                 event_data += '<tr>';

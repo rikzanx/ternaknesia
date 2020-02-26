@@ -28,7 +28,7 @@ class ApiController extends Controller
             DB::raw('sales_detail.qty*product.price AS subtotal')
             )
         ->get();
-        return $data->toJson();
+        return response()->json($data);
     }
     
 }

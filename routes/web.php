@@ -14,4 +14,3 @@
 Route::get('/', function () {
     return view('tampildata');
 });
-Route::get('/datajoin','ApiController@index');
